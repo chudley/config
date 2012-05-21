@@ -26,7 +26,11 @@ function j {
 		echo '' >> $journal_file
 	fi
 	if [ "$1" == "-c" ]; then
-		entry_count=`grep "\[$(date -I)" $journal_file | wc -l | grep -Eo ^[0-9]+`
+		if [ ! -f "$journal_file" ]; then
+			entry_count=0
+		else
+			entry_count=`grep "\[$(date -I)" $journal_file | wc -l | grep -Eo ^[0-9]+`
+		fi
 		echo "($entry_count) entries today"
 	fi
 }
