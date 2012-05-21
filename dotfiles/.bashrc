@@ -17,11 +17,10 @@ function j {
 	# Help
 	if [ "$1" == "-h" ]; then
 		echo Usage: '$ j -m "message"'
-		echo Escape variables with single quotes.
 		return
 	fi
 	if [ "$1" == "-m" ]; then
-		echo [$(date +"%Y-%m-%d %T %z")] >> $journal_file
+		echo [$(date +"%Y-%m-%d %T")] >> $journal_file
 		echo "$2" >> $journal_file
 		echo '' >> $journal_file
 	fi
