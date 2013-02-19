@@ -1,3 +1,4 @@
+execute pathogen#infect()
 syntax on
 
 set ls=2
@@ -11,3 +12,5 @@ au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.md set filetype=mkd
 
 hi StatusLine ctermfg=0 ctermbg=2
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+let g:Powerline_symbols = 'fancy'

@@ -1,11 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/etc/rc.d/functions.d'
-let g:netrw_dirhist_2='/etc/rc.d'
-let g:netrw_dirhist_3='/home/chudley'
-let g:netrw_dirhist_4='/home'
-let g:netrw_dirhist_5='/home/chudley'
-let g:netrw_dirhist_6='/etc/rc.d'
-let g:netrw_dirhist_7='/home/chudley/.fontconfig'
-let g:netrw_dirhist_8='/home/chudley/projects/scaleme.py/app/events'
-let g:netrw_dirhist_9='/etc/postgresql/9.1/main'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/chudley/projects/threegratitud.es/.env/lib/python2.7/site-packages'
+let g:netrw_dirhist_2='/home/chudley/projects/threegratitud.es/tg/tg/settings'
+let g:netrw_dirhist_3='/home/chudley/projects/threegratitud.es/tg/tg'
