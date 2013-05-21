@@ -1,5 +1,11 @@
 export PATH=/usr/local/bin:$PATH
-PS1="\[\e[0;32m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \w \n\[\e[1;32m\]$\[\e[m\] "
+if [ -a ~/.personality ]; then
+	export PERSONALITY=`cat ~/.personality`
+fi
+if [ "$PERSONALITY" == "" ]; then
+	export PERSONALITY=7
+fi
+PS1="\[\e[0;3${PERSONALITY}m\]\u\[\e[m\]@\[\e[0;3${PERSONALITY}m\]\h\[\e[m\] \w \n\[\e[1;32m\]$\[\e[m\] "
 EDITOR=/usr/bin/vim
 
 function activate {

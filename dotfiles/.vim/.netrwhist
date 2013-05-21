@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/chudley/projects/threegratitud.es/.env/lib/python2.7/site-packages'
 let g:netrw_dirhist_2='/home/chudley/projects/threegratitud.es/tg/tg/settings'
 let g:netrw_dirhist_3='/home/chudley/projects/threegratitud.es/tg/tg'
+let g:netrw_dirhist_4='/home/chudley/django-quick-start/cookbooks/django_cms/templates'
+let g:netrw_dirhist_5='/home/chudley/projects/django_feed_project/feed/feed/settings'
