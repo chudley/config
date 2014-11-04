@@ -16,3 +16,11 @@ function activate {
 		echo "Relies on the file '.env/bin/activate', which doesn't exist."
 	fi
 }
+
+if [ -a ~/projects/joyent-tools/cloudapi.sh ]; then
+	source ~/projects/joyent-tools/cloudapi.sh eu-ams-1;
+fi
+
+if [ -a ~/projects/joyent-tools/manta.sh ]; then
+	source ~/projects/joyent-tools/manta.sh;
+fi
