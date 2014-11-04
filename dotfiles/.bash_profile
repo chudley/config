@@ -5,7 +5,7 @@ fi
 if [ "$PERSONALITY" == "" ]; then
 	export PERSONALITY=7
 fi
-PS1="\[\e[0;3${PERSONALITY}m\]\u\[\e[m\]@\[\e[0;3${PERSONALITY}m\]\h\[\e[m\] \w \n\[\e[1;32m\]$\[\e[m\] "
+PS1="\[\e[0;3${PERSONALITY}m\]\u\[\e[0;30m\]@\[\e[0;3${PERSONALITY}m\]\h\[\e[0;30m\] \w \n\[\e[0;30m\]$\[\e[m\] "
 EDITOR=/usr/bin/vim
 
 function activate {
